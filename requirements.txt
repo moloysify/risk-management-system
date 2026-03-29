@@ -1,0 +1,6 @@
+confluent-kafka
+snowflake-connector-python
+streamlit
+pandas
+hypothesis
+pytest

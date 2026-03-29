@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+setup_env.sh
+.kiro/
+*.egg-info/
+dist/
+build/
+.streamlit/secrets.toml
