@@ -54,36 +54,34 @@ except Exception:
 # Dashboard links
 # ---------------------------------------------------------------------------
 st.header("Dashboards")
+st.caption("Use the sidebar to navigate between dashboards.")
 
 col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("""
-    ### 📥 [Ingestion Dashboard](http://localhost:8501)
+    ### 📥 Ingestion Dashboard
     Monitor Kafka ingestion pipeline health — topic status, record counts,
-    batch metrics, slow events, and error alerts. Auto-refreshes every 30s.
+    batch metrics, slow events, and error alerts.
     """)
 
     st.markdown("""
-    ### ⚙️ [Compute Dashboard](http://localhost:8502)
-    View Snowflake compute execution history, manage VaR frequency controls
-    (event-driven toggle, schedule interval), disable all scheduled runs,
-    and trigger on-demand VaR computation.
+    ### ⚙️ Compute Dashboard
+    View Snowflake compute execution history, manage VaR frequency controls,
+    disable all scheduled runs, and trigger on-demand VaR computation.
     """)
 
 with col2:
     st.markdown("""
-    ### 🎲 [Simulator Dashboard](http://localhost:8503)
-    Launch and manage data simulators for Trades, Market Data, and Reference
-    Data. Configure mode, dataset size, volume, and frequency. View simulation
-    log history.
+    ### 🎲 Simulator & Stress Testing
+    Historical stress testing against Gulf Wars, market crashes, and more.
+    Portfolio simulation with Kafka publishing available locally.
     """)
 
     st.markdown("""
-    ### 📊 [Reports Dashboard](http://localhost:8504)
+    ### 📊 Reports Dashboard
     View all risk reports — Exposure by Participant, Top CUSIPs, Top
-    Participants, Concentration, High-Volume CUSIPs, High-Exposure
-    Participants, and the Cortex market narrative.
+    Participants, Concentration, and the Cortex market narrative.
     """)
 
 # ---------------------------------------------------------------------------
