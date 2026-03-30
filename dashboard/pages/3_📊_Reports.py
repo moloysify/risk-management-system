@@ -1,7 +1,11 @@
 """Reports Dashboard page."""
 from __future__ import annotations
 import sys, os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+_dashboard_dir = os.path.join(os.path.dirname(__file__), "..")
+_project_root = os.path.join(os.path.dirname(__file__), "..", "..")
+for p in [_dashboard_dir, _project_root]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
 
 import streamlit as st
 import pandas as pd
